@@ -42,5 +42,6 @@ public class Main {
         rs.autoritati.add(autoritate1);
 
         rs.administratori.getFirst().manageUser();
+        rs.asociazaCurseLaSoferi();
     }
 }

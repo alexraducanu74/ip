@@ -18,4 +18,17 @@ public class RideSharing {
         this.plati = new ArrayList<>();
         this.autoritati = new ArrayList<>();
     }
+
+    public void asociazaCurseLaSoferi(){
+        for ( Sofer sofer : soferi)
+            for ( Cursa cursa : curse)
+                if (!sofer.eLuat() && !cursa.eLuata()) {
+                    System.out.println(sofer + " are cursa " + cursa);
+                    sofer.setLuat();
+                    cursa.setLuata();
+                }
+    }
+
+
+
 }
