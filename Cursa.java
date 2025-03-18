@@ -6,4 +6,9 @@ class Cursa {
         // Implementation here
         return "Pret calculat";
     }
+
+    public Cursa(String start, String end) {
+        this.start = start;
+        this.end = end;
+    }
 }
